@@ -7,11 +7,6 @@ bool BookManager::checkDuplication(string title) {
 }
 
 void BookManager::addBook(string title, string author) {
-	if (checkDuplication(title)) {
-		cout << "책 이름이 중복됩니다." << endl;
-		return;
-	}
-
 	books.push_back(Book(title, author));
 }
 
