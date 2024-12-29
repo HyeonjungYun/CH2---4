@@ -32,13 +32,15 @@ void BookManager::searchByTitle(string title) {
 }
 
 void BookManager::searchByAuthor(string author) {
+	bool isThereBook = false;
 	for (Book book : books)
 		if (book.getAuthor() == author) {
 			printBook(book);
-			return;
+			isThereBook = true;
 		}
 
-	cout << "일치하는 책이 없습니다." << endl;
+	if (!isThereBook)
+		cout << "일치하는 책이 없습니다." << endl;
 }
 
 vector<string> BookManager::boundBookByAuthor(string author) {
