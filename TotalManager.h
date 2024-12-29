@@ -11,6 +11,7 @@ private:
 public:
 	TotalManager(BookManager& bookManager, BorrowManager& borrowManager) : bookManager(&bookManager), borrowManager(&borrowManager) {}
 	void addBook(string title, string author);
+	void borrowBookByAuthor(string author);
 };
 
 #endif
