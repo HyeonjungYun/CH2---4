@@ -11,8 +11,7 @@ void BookManager::addBook(string title, string author) {
 }
 
 void BookManager::printBook(Book book) {
-	cout << "Title : " << book.getTitle() << endl;
-	cout << "Author : " << book.getAuthor() << endl << endl;
+	cout << "Title : " << book.getTitle() << " By " << book.getAuthor() << endl;
 }
 
 void BookManager::displayAllBooks() {
