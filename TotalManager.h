@@ -10,12 +10,7 @@ private:
 	BorrowManager* borrowManager;
 public:
 	TotalManager(BookManager& bookManager, BorrowManager& borrowManager) : bookManager(&bookManager), borrowManager(&borrowManager) {}
-	void addBook(Book book);
+	void addBook(string title, string author);
 };
-
-void TotalManager::addBook(Book book) {
-	bookManager->addBook(book.getTitle(), book.getAuthor());
-	borrowManager->initializeStock(book);
-}
 
 #endif
