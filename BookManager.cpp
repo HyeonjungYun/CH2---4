@@ -20,6 +20,8 @@ void BookManager::displayAllBooks() {
 }
 
 void BookManager::searchByTitle(string title) {
+	cout << "현재 책 목록 : " << endl;
+
 	for (Book book : books)
 		if (book.getTitle() == title) {
 			printBook(book);
