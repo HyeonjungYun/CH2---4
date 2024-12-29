@@ -10,6 +10,7 @@ void BorrowManager::borrowBook(string title) {
 		return;
 	}
 	stock[title] -= 1;
+	cout << title << "책을 1권 대여했습니다." << endl;
 }
 
 void BorrowManager::returnBook(string title) {
@@ -18,6 +19,7 @@ void BorrowManager::returnBook(string title) {
 		return;
 	}
 	stock[title] += 1;
+	cout << title << "책을 1권 반납했습니다." << endl;
 }
 
 void BorrowManager::displayStock() {
