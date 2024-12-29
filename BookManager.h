@@ -12,6 +12,7 @@ public :
 	void displayAllBooks();
 	void searchByTitle(string title);
 	void searchByAuthor(string author);
+	vector<string> boundBookByAuthor(string author);
 	bool checkDuplication(string title);
 	void printBook(Book book);
 };
