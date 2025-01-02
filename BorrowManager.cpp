@@ -5,7 +5,8 @@ void BorrowManager::initializeStock(string title, int quantity) {
 }
 
 void BorrowManager::borrowBook(string title) {
-	if (stock[title] == 0) {
+	auto searchTitle = stock.find(title);
+	if (searchTitle == stock.end()) {
 		cout << "대여 가능한 책이 없습니다." << endl;
 		return;
 	}
