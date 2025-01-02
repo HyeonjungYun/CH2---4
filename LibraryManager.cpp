@@ -32,7 +32,6 @@ void LibraryManager::manageSystem() {
 		cout << "8. 종료" << endl;
 		cout << "입력 : ";
 		getline(cin, choice);
-		cout << choice << endl;
 
 		if (choice == "1") {
 			string title, author;
